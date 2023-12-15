@@ -20,5 +20,6 @@ Se recomienda para el curso de data 8 tener una cuenta de github:
     
 
 
-
+Referencias: Adaptado de curso de data 8, 
+Estado: prototipo_dev. 
 
