@@ -1,0 +1,13 @@
+# Manual de instrucciones. 
+
+1. Ejecutar 
+    DOCKER_BUILDKIT=0 docker-compose up -d --build 
+
+2. Ir a la url http://localhost:4000
+
+3. Para editar ir a index y ver página web.
+
+Se recomienda que la página web quede en el github. 
+
+Posibles problemas para muchos usuarios: Peticiones realizadas segun los limites de github actions, 
+

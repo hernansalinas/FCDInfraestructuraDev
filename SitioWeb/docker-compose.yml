@@ -1,0 +1,18 @@
+version: "3.5"
+
+services:
+  jekyll:
+    build:
+      context: ./
+    image: just_the_docs
+    container_name: just_the_docs    
+    ports:
+      - "4000:4000"
+    
+    volumes:
+      - .:/usr/src/app
+ #   stdin_open: true
+#    tty: true
+    #serve
+    # serve -H 0.0.0.0 -t
+

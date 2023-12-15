@@ -1,0 +1,24 @@
+Repo: Prototipado.  
+
+
+InfraestructuraDev
+    Contiene información para desplegar jupyter hub en local.
+
+Sitio Web 
+
+    Contiene información para desplegar el sitio web en local, se puede desplegar en github pages
+
+
+
+
+Se recomienda para el curso de data 8 tener una cuenta de github: 
+
+    1. Cuenta de github con el nombre del curso. 
+    2. Repositorio con página web del curso, Web_site_FCD_2024_1
+    3. Repositorio con laboratorios y tareas, Files_FCD_2024_1.
+        En este directorio deberá todo el material traducido del curso de data 8.
+    
+
+
+
+

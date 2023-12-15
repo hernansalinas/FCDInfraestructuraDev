@@ -1,0 +1,37 @@
+{"0": {
+    "doc": "Inicio",
+    "title": "Sitio",
+    "content": " ",
+    "url": "/#sitio",
+    
+    "relUrl": "/#sitio"
+  },"1": {
+    "doc": "Inicio",
+    "title": "Inicio",
+    "content": "Construcción: Basado en http://www.data8.org/zero-to-data-8/intro.html#types-of-content . Este es el curso de ciencia de datos aca deberia ir una tabla con la informacion que nos interesa y los link . a.sdlkfjalsdkfjasdlkf . Libro guia . | Fecha | Sesion |:————-|:——————| . | Fecha | Sesion | . | hola mund |   | . | Fecha | Sesion | . | Feb 07 | 1 Introducción Lecturas 1 1.1 1.2 1.3 1.3.1 1.3.2 Presentacion Demostracion Video Lab 1 : Expresiones (Entrega Feb 12) | . | Feb 09 | 2 Causa y Efecto Lecturas 2 2.1 2.2 2.3 2.4 2.5 Presentacion Demostracion Video Act 1 : (Entrega Feb 12) | . | Feb 12 | 3 Tablas Lecturas: 3 3.1 3.2 3.2.1 3.3 3.4, Presentacion Demostracion Video Lab 2 : Tablas (Entrega Feb 20) | . ",
+    "url": "/",
+    
+    "relUrl": "/"
+  },"2": {
+    "doc": "Politicas",
+    "title": "Configuration",
+    "content": "Just the Docs has some specific configuration parameters that can be defined in your Jekyll site’s _config.yml file. View this site’s _config.yml file as an example. ",
+    "url": "/politicas.html#configuration",
+    
+    "relUrl": "/politicas.html#configuration"
+  },"3": {
+    "doc": "Politicas",
+    "title": "Site logo",
+    "content": "# Set a path/url to a logo that will be displayed instead of the title logo: \"/assets/images/just-the-docs.png\" . ",
+    "url": "/politicas.html#site-logo",
+    
+    "relUrl": "/politicas.html#site-logo"
+  },"4": {
+    "doc": "Politicas",
+    "title": "Politicas",
+    "content": " ",
+    "url": "/politicas.html",
+    
+    "relUrl": "/politicas.html"
+  }
+}

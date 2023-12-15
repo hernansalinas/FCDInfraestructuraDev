@@ -1,0 +1,41 @@
+# Copyright (c) Jupyter Development Team.
+# Distributed under the terms of the Modified BSD License.
+ARG JUPYTERHUB_VERSION
+FROM jupyterhub/jupyterhub:$JUPYTERHUB_VERSION
+
+# Install dockerspawner, nativeauthenticator
+# hadolint ignore=DL3013
+RUN apt-get update 
+RUN apt-get install -y git 
+#nano gcc python3-dev
+RUN apt-get install -y gcc python3-dev 
+#RUN apt-get install npm nodejs
+#npm install -g configurable-http-proxy
+
+RUN python3 -m pip install --upgrade pip
+#RUN python3 -m pip install --no-cache-dir 
+RUN python3 -m pip install notebook 
+RUN python3 -m pip install notebook jupyterlab
+RUN python3 -m pip install numpy matplotlib pandas scipy otter-grader
+RUN python3 -m pip install jupyterhub-nativeauthenticator
+RUN python3 -m pip install dockerspawner
+RUN python3 -m pip install nbgitpuller
+RUN python3 -m pip install nbgitpuller-link
+RUN python3 -m pip install datascience
+RUN python3 -m pip install otter-grader
+RUN python3 -m pip install scipy
+RUN python3 -m pip install sympy
+
+
+
+
+ 
+
+
+
+#RUN python3 -m pip install -m otter
+
+
+#!/bin/bash
+CMD ["jupyterhub", "-f", "/srv/jupyterhub/jupyterhub_config.py"]
+#Hola mundo 

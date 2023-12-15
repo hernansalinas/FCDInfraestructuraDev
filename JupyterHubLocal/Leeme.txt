@@ -1,0 +1,30 @@
+# Manual de instrucciones. 
+
+1. Ejecutar 
+    DOCKER_BUILDKIT=0 docker-compose up -d --build 
+
+2. Ir a la url http://localhost:8000/hub/login
+
+3. Crear usuario e ingresar al hub.  En esta versión de prueba los usuarios permitidos tiene que tener el 
+siguiente nombre de usuario:  
+    ['bob','fernando','gloria','verde','cyan',\
+    'pedro', 'juan' ,'bosco', 'laura', 'ernesto','mono','tar']
+
+    Para más detalle, ver archivo jupyterhub_config.py 
+
+
+4. Si ingresa como admin, de igual forma se debe crear el usuario y contraseña. 
+Para ver detalles de los usuarios existente, ir al endpoint: 
+
+    http://localhost:8000/hub/admin#/ 
+    http://localhost:8000/hub/authorize
+
+
+
+Ayudas
+
+docker ps # Lista los contenedores
+docker exe --it <name_contenedores> bash
+docker log <name_contendor >
+
+Comandos basicos de docker: 

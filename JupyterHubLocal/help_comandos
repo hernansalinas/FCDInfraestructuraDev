@@ -1,0 +1,55 @@
+#El archivo docker-compose contiene informacion de lo que se va a construir 
+#con el archivo dockerfilejupyter hub
+
+DOCKER_BUILDKIT=0 docker-compose up -d --build #ejecunta el docker compose
+
+docker ps # Lista los contenedores
+
+docker exe --it <name_contenedores> bash
+docker log <name_contendor >
+
+useradd -m -p $(openssl passwd -1 password) username
+useradd -m -p $(openssl passwd -1 1234567890) pedro
+
+#Ver usuarios dentro de  jupyure hub
+#sqlite3 jupyterhub.sqlite
+
+copiar archivos al directorio principal
+docker cp jupyterhub_simple:/home/ holamundo
+# Posible referencias si no te siente el github para redireccionar 
+# contenido a traves de link 
+<a href="https://jupyterhub.example/hub/user-redirect/lab/tree/path/to/notebook.ipynb" target="_parent"><img src="https://jupyterhub.example/assets/jupyterhub-badge.svg" alt="Open In JupyterHub"/></a>
+
+
+
+url:  http://localhost:8000/
+repo: https://github.com/hernansalinas/FundCienDatosMaterial_year_semestre_dev
+subPath: material_prueba/hw/hw01/hw01.ipynb
+
+# Subpath Notebook Jupyter 
+http://localhost:8000/hub/user-redirect/git-pull?repo=https://github.com/hernansalinas/FundCienDatosMaterial_year_semestre_dev&branch=main
+
+
+# Path notebook principal 
+https://github.com/hernansalinas/FundCienDatosMaterial_year_semestre_dev/blob/main/material_prueba/hw/hw01/hw01.ipynb
+
+
+
+
+# Crear extension de jupyter lab 
+
+{
+  "jupyter.lab.tool": true,
+  "name": "holamundo",
+  "iconUrl": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
+  "url": "https://github.com",
+  "tooltip": "Ir a GitHub"
+
+}
+
+
+ab Credit	10%
+Homeworks	20%
+Projects	25%
+Midterm	15%
+Final	30%

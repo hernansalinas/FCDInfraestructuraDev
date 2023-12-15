@@ -1,0 +1,44 @@
+# Pendientes 
+
+Modo de autenticacion nativeautheticator:   
+Problemas de seguridad: 
+
+Pendiente
+
+Se debe generar una backup de los datos de los usuarios, por si en algun momento toca volver 
+a montar todo el sistema, para ello, cada dia se debe actualizar un sistema automatico, ver como 
+lo hacen en bercley california 
+
+
+
+1. Donde se almancenaran todos los archivos de los usuarios, nombre de usuario  
+   
+   a) Con los correos universitarios se puede construir un sistema automático de login, almacenado 
+   en un excel, asi se crean los usuarios especificos y la actualizacion constante de la base de datos
+   esta base de datos puede ser construida por semestre Fundamentos_Ciencia_Datos_8/user_2021_II
+   Se debe agregar una columna a la base de datos, con el estado cancelo y no cancelo 
+   La base de datos debe ser actualizada constantemente, para validar los usuarios y eliminar los usuarios 
+   que cancelan, para economizar recursos.
+Falta recuperar contrasenas, si el sistema esta en cloud, el sistema de login mejora, si no toca 
+disenarlo y tener el servidor smtp 
+
+
+
+2. Gestionar los permisos de la formas mas adecuada para todos los usuarios
+3. Realizar pruebas de vulberabilidad del sistema y de escalabilidad.
+4. Pensar en envio de correos masivos personalizados a estudiantes para los usuairos y contrasenas
+
+
+
+
+# Se trae la informacion de los usuarios
+
+docker cp jupyterhub_simple:/home/ holamundo
+
+En caso de falla se debe realizar lo siguiente; 
+
+Traer última copia de seguridad de los usuarios. 
+Crear los usuarios nuevamente con sus contrasenas originales o actualizadas
+Hacer una copia y volver al estado actual, hacer pruebas del sistemas de backup y 
+recuperacion, para qeu quede de manera automatico
+ docker cp jupyterhub_simple:/home/ holamundo

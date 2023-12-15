@@ -1,0 +1,55 @@
+# Set the base image to Jupyter Notebook
+FROM jupyter/base-notebook
+
+# Update the repository sources list and install some packages
+RUN apt-get update && apt-get install -y curl git
+
+# Install some Python libraries
+RUN pip install numpy pandas matplotlib
+
+# Copy the entrypoint script
+COPY entrypoint.sh /usr/local/bin/
+
+# Make the entrypoint script executable
+RUN chmod +x /usr/local/bin/entrypoint.sh
+
+# Set the entrypoint script as the default command
+CMD ["entrypoint.sh"]
+
+
+
+El archivo entrypoint.sh es un script que se ejecuta 
+cuando se inicia el contenedor. Este script puede contener 
+las instrucciones que quieras, como crear el directorio de 
+trabajo, iniciar el servidor de notebook, etc. Por ejemplo, el siguiente entrypoint.sh crea el directorio /home/jupyter y lo asigna al usuario jovyan, que es el usuario por defecto de la imagen base de Jupyter Notebook:
+
+
+
+#!/bin/bash
+# Create the working directory
+mkdir -p /home/jupyter
+# Change the ownership of the working directory to jovyan
+chown -R jovyan /home/jupyter
+# Start the notebook server
+jupyter notebook --ip 0.0.0.0 --port 8888 --no-browser
+
+
+
+
+
+
+import csv
+import subprocess
+
+# Open the CSV file
+with open('base_datos.csv') as csvfile:
+    # Read the CSV file as a dictionary
+    reader = csv.DictReader(csvfile)
+    # Loop through each row
+    for row in reader:
+        # Get the username and password from the row
+        username = row['username']
+        password = row['password']
+        # Create the user with the username and password
+        subprocess.run(['sudo', 'useradd', '-m', username])
+        subprocess.run(['sudo', 'echo', f'{username}:{password}', '|', 'chpasswd'])
