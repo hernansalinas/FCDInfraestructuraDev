@@ -8,7 +8,7 @@ Sitio Web
 
     Contiene información para desplegar el sitio web en local, se puede desplegar en github pages
 
-Utitities
+Utilities
     Contiene informacion para generar los link del clase a clase. 
 
 
