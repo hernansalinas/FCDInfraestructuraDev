@@ -11,3 +11,8 @@ Se recomienda que la página web quede en el github.
 
 Posibles problemas para muchos usuarios: Peticiones realizadas segun los limites de github actions, 
 
+
+Utitities
+
+    Contiene notebook de python y archivos de configuracion para generar el contenido
+    del sitio web de forma automática
