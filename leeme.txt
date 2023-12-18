@@ -1,4 +1,4 @@
-Repo: Prototipado.  
+Repositorio: Prototipado para ejecucion en local del curso de data 8   
 
 
 InfraestructuraDev
@@ -8,7 +8,8 @@ Sitio Web
 
     Contiene información para desplegar el sitio web en local, se puede desplegar en github pages
 
-
+Utitities
+    Contiene informacion para generar los link del clase a clase. 
 
 
 Se recomienda para el curso de data 8 tener una cuenta de github: 
