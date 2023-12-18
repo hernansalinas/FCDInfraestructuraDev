@@ -10,7 +10,8 @@
 Se recomienda que la página web quede en el github. 
 
 Posibles problemas para muchos usuarios: Peticiones realizadas segun los limites de github actions, 
-
+Pendientes: Actualizacion de pagina web, politicas,  evaluaciones
+Despligue a traves de github actions
 
 Utitities
 
